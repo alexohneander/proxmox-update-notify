@@ -8,7 +8,7 @@ gem "proxmox-sdk", "~> 0.1.1"
 
 gem "byebug", "~> 12.0", :groups => [:development, :test]
 
-gem "sinatra", "~> 4.1"
+gem "sinatra", "~> 4.2"
 gem "rackup", "~> 2.2"
 gem "puma", "~> 7.0"
 
