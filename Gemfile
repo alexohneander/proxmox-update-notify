@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "proxmox-sdk", "~> 0.1.1"
+gem "proxmox-sdk", "~> 0.1.4"
 
 gem "byebug", "~> 12.0", :groups => [:development, :test]
 

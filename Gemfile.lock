@@ -3,21 +3,21 @@ GEM
   specs:
     base64 (0.3.0)
     byebug (12.0.0)
-    faraday (2.14.0)
+    faraday (2.14.3)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
-    faraday-net_http (3.4.1)
-      net-http (>= 0.5.0)
-    json (2.15.0)
+    faraday-net_http (3.4.4)
+      net-http (~> 0.5)
+    json (2.20.0)
     logger (1.7.0)
     multi_json (1.17.0)
     mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
-    net-http (0.6.0)
-      uri
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     nio4r (2.7.4)
-    proxmox-sdk (0.1.1)
+    proxmox-sdk (0.1.4)
       faraday (~> 2.14)
     puma (7.0.4)
       nio4r (~> 2.0)
@@ -46,7 +46,7 @@ GEM
       sinatra (= 4.1.1)
       tilt (~> 2.0)
     tilt (2.6.1)
-    uri (1.0.3)
+    uri (1.1.1)
 
 PLATFORMS
   arm64-darwin-24
@@ -54,7 +54,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug (~> 12.0)
-  proxmox-sdk (~> 0.1.1)
+  proxmox-sdk (~> 0.1.4)
   puma (~> 7.0)
   rackup (~> 2.2)
   sinatra (~> 4.1)

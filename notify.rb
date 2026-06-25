@@ -4,6 +4,7 @@ require 'proxmox'
 require 'sinatra'
 require 'sinatra/json'
 
+
 client = Proxmox::Client.new(
   base_url: ENV['PROXMOX_URL'],
   username: ENV['PROXMOX_USER'],
@@ -26,7 +27,7 @@ def check_updates(client)
   updates = []
 
   cluster.nodes.each do |n|
-    node = Proxmox::Resources::Node.new(client, n['node'])
+    node = Proxmox::Resources::Node.new(client, n.node)
     proxmox_updates = node.updates.select { |p| p['Origin'] == 'Proxmox' }
     updates.push(proxmox_updates) if proxmox_updates.count.positive?
   end
